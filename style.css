@@ -21,12 +21,12 @@ header {
     letter-spacing: 1px;
 }
 
-/* Search Box Container */
+
 .search-box {
     position: relative;
 }
 
-/* Input Field */
+
 #search {
     padding: 10px 40px 10px 15px;
     border-radius: 25px;
@@ -38,18 +38,18 @@ header {
     transition: 0.3s;
 }
 
-/* Placeholder */
+
 #search::placeholder {
     color: #bbb;
 }
 
-/* Focus Effect */
+
 #search:focus {
     background: #444;
     box-shadow: 0 0 8px gold;
 }
 
-/* Search Icon */
+
 .search-box i {
     position: absolute;
     right: 12px;
