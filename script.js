@@ -1,4 +1,4 @@
-// ================= CATEGORY ACTIVE BUTTON =================
+
 let buttons = document.querySelectorAll(".category-buttons button");
 
 if (buttons.length > 0) {
@@ -10,7 +10,7 @@ if (buttons.length > 0) {
     });
 }
 
-// ================= CART (ARRAY SYSTEM) =================
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function updateCartCount() {
@@ -20,7 +20,7 @@ function updateCartCount() {
     }
 }
 
-// ================= ADD TO CART =================
+
 function addToCart(name, price, image) {
     let product = {
         name: name,
@@ -33,13 +33,13 @@ function addToCart(name, price, image) {
 
     updateCartCount();
 }
-// ================= PAGE LOAD =================
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Cart count show
+  
     updateCartCount();
 
-    // PRODUCT PAGE DATA
+  
     let name = localStorage.getItem("productName");
     let price = localStorage.getItem("productPrice");
 
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
         priceEl.innerText = price || "";
     }
 
-    // CART PAGE LOAD
+
     loadCart();
 });
 
-// ================= SEARCH FUNCTION =================
+
 let searchInput = document.getElementById("search");
 
 if (searchInput) {
@@ -74,7 +74,7 @@ if (searchInput) {
     });
 }
 
-// ================= CATEGORY FILTER =================
+
 let categoryButtons = document.querySelectorAll(".category-buttons button");
 let cards = document.querySelectorAll(".card");
 
@@ -94,14 +94,14 @@ if (categoryButtons.length > 0) {
     });
 }
 
-// ================= VIEW PRODUCT =================
+
 function viewProduct(name, price) {
     localStorage.setItem("productName", name);
     localStorage.setItem("productPrice", price);
     window.location.href = "product.html";
 }
 
-// ================= CART PAGE FUNCTIONS =================
+
 function loadCart() {
     let cartItemsDiv = document.getElementById("cart-items");
     let totalPriceEl = document.getElementById("total-price");
