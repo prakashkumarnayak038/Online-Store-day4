@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>Books - RoyalMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RoyalMart - Books</h1>
+    </header>
+     <section class="categories">
+        <div class="category-buttons">
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html"><button>All</button></a>
+            <a href="Electronics.html"><button class="active">Electronics</button></a>
+            <a href="Fashion.html"><button>Fashion</button></a>
+            <a href="book.html"><button>Books</button></a>
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+
+        <div class="cart">
+            <div class="cart">
+                <a href="cart.html">🛒 Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+
+        
+
+        <div class="card" onclick="viewProduct('Wireless Headphones', '₹1259')">
+            <img src="https://m.media-amazon.com/images/I/31b1iUn5GGL._SX300_SY300_QL70_ML2_.jpg">
+            <h3>Earbuds</h3>
+            <p>₹1259</p>
+            <button onclick="event.stopPropagation(); addToCart('Wireless Headphones', '₹1259','https://m.media-amazon.com/images/I/31b1iUn5GGL._SX300_SY300_QL70_ML2_.jpg')">
+                Add to Cart
+            </button>
+        </div>
+        
+
+        <div class="card" onclick="viewProduct('Sony LED', '₹23399')">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.cvePTsVcXuyFOo6OfUtVfAHaE8?pid=Api&P=0&h=180">
+            <h3>Sony LED</h3>
+            <p>₹23399</p>
+            <button onclick="event.stopPropagation(); addToCart('Sony LED','₹23399','https://tse2.mm.bing.net/th/id/OIP.cvePTsVcXuyFOo6OfUtVfAHaE8?pid=Api&P=0&h=180')">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('iphone 16', '₹89900')">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.W6ErfRqcU3t5jXBk9YpgKQHaJL?pid=Api&P=0&h=180">
+            <h3>iphone 16</h3>
+            <p>₹89900</p>
+           <button onclick="event.stopPropagation(); addToCart('iphone 16','₹89900','https://tse3.mm.bing.net/th/id/OIP.W6ErfRqcU3t5jXBk9YpgKQHaJL?pid=Api&P=0&h=180')">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('electric kettle', '₹659')">
+            <img src="https://m.media-amazon.com/images/I/71d-H5iyQ2L.jpg">
+            <h3>electric kettle</h3>
+            <p>₹659</p>
+            <button onclick="event.stopPropagation(); addToCart('electric kettle','₹659','https://m.media-amazon.com/images/I/71d-H5iyQ2L.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Nikon D850 45.7MP Digital SLR Camera', '226990')">
+            <img src="https://m.media-amazon.com/images/I/81WtQ64-SOL._AC._SR360,460.jpg">
+            <h3>Nikon D850 45.7MP Digital SLR Camera</h3>
+            <p>226990</p>
+            <button onclick="event.stopPropagation(); addToCart('Nikon D850 45.7MP Digital SLR Camera','226990','https://m.media-amazon.com/images/I/81WtQ64-SOL._AC._SR360,460.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Portronics SoundDrum 1 12W TWS Portable Bluetooth Speaker', '₹999')">
+            <img src="https://m.media-amazon.com/images/I/41R65YzAvGL._SY300_SX300_QL70_FMwebp_.jpg">
+            <h3>Portronics SoundDrum 1 12W TWS Portable Bluetooth Speaker</h3>
+            <p>₹999</p>
+            <button onclick="event.stopPropagation(); addToCart('Portronics SoundDrum 1 12W TWS Portable Bluetooth Speaker','₹999','https://m.media-amazon.com/images/I/41R65YzAvGL._SY300_SX300_QL70_FMwebp_.jpg')">Add to Cart</button>
+        </div>
+
+       <div class="card" onclick="viewProduct('IKONIC ME Vibe Mini Hair Dryer (1200 W, Emerald)', '₹1394')">
+            <img src="https://rukminim1.flixcart.com/image/1540/1540/xif0q/hair-dryer/0/y/3/vibe-hair-dryer-vibe-mini-ikonic-professional-original-imahccypjzgckujq.jpeg?q=90">
+            <h3>IKONIC ME Vibe Mini Hair Dryer (1200 W, Emerald)</h3>
+            <p>₹1394</p>
+            <button onclick="event.stopPropagation(); addToCart('IKONIC ME Vibe Mini Hair Dryer (1200 W, Emerald)','₹1394','https://rukminim1.flixcart.com/image/1540/1540/xif0q/hair-dryer/0/y/3/vibe-hair-dryer-vibe-mini-ikonic-professional-original-imahccypjzgckujq.jpeg?q=90')">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Wireless HeadphonesVoltas Beko 183 L Direct Cool Single Door 2 Star Refrigerator (Stella Wine, RDC215D/S0WSR0M0000GO)', '₹11999')">
+            <img src="https://rukminim1.flixcart.com/image/1540/1540/xif0q/refrigerator-new/h/s/4/-original-imahbc98bephhnmn.jpeg?q=90">
+            <h3>Voltas Beko 183 L Direct Cool Single Door 2 Star Refrigerator (Stella Wine, RDC215D/S0WSR0M0000GO)</h3>
+            <p>₹11999</p>
+           <button onclick="event.stopPropagation(); addToCart('Wireless HeadphonesVoltas Beko 183 L Direct Cool Single Door 2 Star Refrigerator (Stella Wine, RDC215D/S0WSR0M0000GO)','₹11999','https://rukminim1.flixcart.com/image/1540/1540/xif0q/refrigerator-new/h/s/4/-original-imahbc98bephhnmn.jpeg?q=90')">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>RoyalMart</h2>
+            <p>Experience premium shopping with RoyalMart.</p>
+            <p>Shop smarter, live better with RoyalMart.</p>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p class="copyright">© 2026 RoyalMart. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

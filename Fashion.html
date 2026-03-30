@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>Books - RoyalMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RoyalMart - Books</h1>
+    </header>
+     <section class="categories">
+        <div class="category-buttons">
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html"><button>All</button></a>
+            <a href="Electronics.html"><button>Electronics</button></a>
+            <a href="Fashion.html"><button class="active">Fashion</button></a>
+            <a href="book.html"><button>Books</button></a>
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </section>
+
+    <section class="products">
+
+      <div class="card" onclick="viewProduct('Wrangler Men Slim Low Rise Grey Jeans', '₹1999')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/1/2/p/32-wmjn103557-wrangler-original-imahherdrzazgrbr.jpeg?q=70">
+            <h3>Wrangler Men Slim Low Rise Grey Jeans</h3>
+            <p>₹1999</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+        
+
+        <div class="card" onclick="viewProduct('Allen Solly Men Colorblock Polo Neck Cotton Blend Blue T-Shirt', '₹899')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/m/t/z/m-askpqrgfx87512-allen-solly-original-imagwfhwpsmem3hp.jpeg?q=70">
+            <h3>Allen Solly Men Colorblock Polo Neck Cotton Blend Blue T-Shirt</h3>
+            <p>₹899</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('WOODLAND Men Casual Sandal (Green , 6)', '₹1380')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/l/x/b/-original-imah5yzzeqqnvt8j.jpeg?q=70">
+            <h3>WOODLAND Men Casual Sandal (Green , 6)</h3>
+            <p>₹1380</p>
+           <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('KanjiQueen Woven, Self Design Banarasi Silk Blend, Pure Silk Saree (Magenta, Brown)', '₹659')">
+            <img src="https://rukminim1.flixcart.com/image/1540/1540/xif0q/sari/p/o/x/free-kanjivaram-sarees-kanjivaram-saree-banarasi-silk-high-original-imahhygy7rfkc4sb.jpeg?q=90">
+            <h3>KanjiQueen Woven, Self Design Banarasi Silk Blend, Pure Silk Saree (Magenta, Brown)</h3>
+            <p>₹659</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Denill Women Flats Sandal (Brown , 8)', '790')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sandal/e/s/f/5-fl-a54-38-denill-brown-original-imahec2343g4strd.jpeg?q=70">
+            <h3>Denill Women Flats Sandal (Brown , 8)</h3>
+            <p>790</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Rangzari Women Viscose Rayon Kurta Pant Dupatta Set', '₹999')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/ethnic-set/t/o/h/6xl-3p-set-rangzari-original-imahjk9khcueqvjh.jpeg?q=70">
+            <h3>Rangzari Women Viscose Rayon Kurta Pant Dupatta Set</h3>
+            <p>₹999</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+       <div class="card" onclick="viewProduct('IKONIC ME Vibe Mini Hair Dryer (1200 W, Emerald)', '₹1394')">
+            <img src="https://rukminim1.flixcart.com/image/1540/1540/xif0q/hair-dryer/0/y/3/vibe-hair-dryer-vibe-mini-ikonic-professional-original-imahccypjzgckujq.jpeg?q=90">
+            <h3>IKONIC ME Vibe Mini Hair Dryer (1200 W, Emerald)</h3>
+            <p>₹1394</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('IGA COLLECTION Valentine Special Dragon Colour Base Stainless Steel Finger Ring - Thumb Ring Stainless Steel Titanium Plated Ring', '₹199')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/ky90scw0/shopsy-ring/w/n/j/19-shopsy-hc-332-black-red-dragon-finger-ring-size-19-ring-heer-original-imagagw4uun6yhkf.jpeg?q=70">
+            <h3>IGA COLLECTION Valentine Special Dragon Colour Base Stainless Steel Finger Ring - Thumb Ring Stainless Steel Titanium Plated Ring</h3>
+            <p>₹199</p>
+           <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>RoyalMart</h2>
+            <p>Experience premium shopping with RoyalMart.</p>
+            <p>Shop smarter, live better with RoyalMart.</p>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p class="copyright">© 2026 RoyalMart. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

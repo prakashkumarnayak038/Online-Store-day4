@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+        <h1>RoyalMart</h1>
+        
+    </header>
+
+
+   <section class="categories">
+        <div class="category-buttons">
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html"><button>All</button></a>
+            <a href="Electronics.html"><button>Electronics</button></a>
+            <a href="Fashion.html"><button>Fashion</button></a>
+            <a href="book.html"><button>Books</button></a>
+            <input type="text" id="search" placeholder="Search products...">
+           
+        </div>
+        
+        <div class="cart">
+            <a href="cart.html">🛒 Cart</a>
+        </div>
+    </section>
+    <!-- PRODUCTS -->
+    <div class="container">
+        <section class="products">
+
+            <div class="card" onclick="viewProduct('Wireless Headphones', '₹1999')">
+                <img src="https://jucycorporategifts.com/cdn/shop/files/Headphone.png?v=1709882316" alt="product">
+                <h3>Head Phone</h3>
+                <p>₹1999</p>
+                <button onclick="event.stopPropagation(); addToCart('Wireless Headphones','₹1999','https://jucycorporategifts.com/cdn/shop/files/Headphone.png?v=1709882316')">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+
+           <div class="card" onclick="viewProduct('Wireless Headphones', '₹1999')">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcROK2GiTvUg1mYmQ_JSdJm7Qn7SonuBc4tEO2_PI0sWHhJhR8hoSarqlZi91nvCRWy0F2P6QvG1QTxzwaZW_RtLOwNTeiaMxDHultCgQoL0vPgTdN4gB-zI_g&usqp=CAc" alt="product">
+                <h3>Jeans</h3>
+                <p>₹799</p>
+                <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+            <div class="card" onclick="viewProduct('Electric kettle', '₹659')">
+                <img src="https://m.media-amazon.com/images/I/71d-H5iyQ2L.jpg" alt="product">
+                <h3>electric kettle</h3>
+                <p>₹659</p>
+                <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+            <div class="card" onclick="viewProduct('Wireless Headphones', '₹1999')">
+                <img src="data:image/jpeg;base64,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" alt="product">
+                <h3>Saree</h3>
+                <p>₹699</p>
+                <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+            <div class="card" onclick="viewProduct('Wireless Headphones', '₹1999')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAplN8HktPMWc-F1TbVDvYkoD4ut-3NNpxPw&s" alt="product">
+                <h3>Laptop</h3>
+                <p>₹41999</p>
+                <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+            <div class="card" onclick="viewProduct('Wireless Headphones', '₹1999')">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQNJin2bWJSHzcP-ThLbaGQqHFmUBs1enUKNAas5JYFLCmAc7Qse7cy0gjL1np3ajaqa_n4zOlgbn6OR0cpwIjyHR3CY-vtfu9LIdKjZCpl" alt="product">
+                <h3>Book</h3>
+                <p>₹199</p>
+                <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+                <p>⭐ 4.5</p>
+            </div>
+
+
+
+
+
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <h2>RoyalMart</h2>
+            <p>Experience premium shopping with RoyalMart.</p>
+            <p>Shop smarter, live better with RoyalMart.</p>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p class="copyright">© 2026 RoyalMart. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

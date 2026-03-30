@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+   
+<head>
+    <title>Books - RoyalMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>RoyalMart - Books</h1>
+    </header>
+     <section class="categories">
+        <div class="category-buttons">
+            <a href="index.html"><button>Home</button></a>
+            <a href="index.html"><button>All</button></a>
+            <a href="Electronics.html"><button>Electronics</button></a>
+            <a href="Fashion.html"><button>Fashion</button></a>
+            <a href="books.html"><button class="active">Books</button></a>
+            <input type="text" id="search" placeholder="Search products...">
+        </div>
+
+        <div class="cart">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </section>
+
+    <section class="products">
+
+         <div class="card" onclick="viewProduct('Prahlad Bhakti And Narasimha Avatar Illustrated Story Book', '₹430')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/7/p/t/sacred-tale-of-prahlad-and-narasimha-avatar-for-children-original-imahhg4st2hsyyxq.jpeg?q=70">
+            <h3>Prahlad Bhakti And Narasimha Avatar Illustrated Story Book</h3>
+            <p>₹430</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+        
+
+        <div class="card" onclick="viewProduct('Winners Online Edutech Pvt Ltd Indian History Book (Hindi Medium) (Paperback, Winners Publication)', '₹159')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/i/z/2/mahila-supervisor-maths-book-hindi-medium-original-imah6b7upsp9rzft.jpeg?q=70">
+            <h3>Winners Online Edutech Pvt Ltd Indian History Book (Hindi Medium) (Paperback, Winners Publication)</h3>
+            <p>₹159</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('S.CHAND AND COMPANY LTD. New Edition: Economy MCQs 450 Book for UPSC CSE & State PSC Examinations 2026 ', '₹172')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/z/v/w/new-edition-economy-mcqs-450-book-for-upsc-cse-state-psc-original-imahkvjqj5zmt2gk.jpeg?q=70">
+            <h3>S.CHAND AND COMPANY LTD. New Edition: Economy MCQs 450 Book for UPSC CSE & State PSC Examinations 2026 </h3>
+            <p>₹172</p>
+           <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Bharat Ka Bhugol- Indian Geography Book In Hindi Latest Edition For UPSC', '₹419')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/7/d/w/bharat-ka-bhugol-indian-geography-book-in-hindi-1st-edition-for-original-imagkv4vxyz3ynwn.jpeg?q=70">
+            <h3>Bharat Ka Bhugol- Indian Geography Book In Hindi Latest Edition For UPSC</h3>
+            <p>₹419</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('UPSC CSE Indian Polity SIP Book For Prelims Exam 2026 ', '247')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/q/b/h/upsc-cse-indian-polity-sip-book-for-prelims-exam-2026-english-original-imahks8jvzzqveqb.jpeg?q=70">
+            <h3>UPSC CSE Indian Polity SIP Book For Prelims Exam 2026 </h3>
+            <p>247</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('Agniveer Indian Army Updated 2026 (GD & Tradesman) Maths', '₹149')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/y/t/w/agniveer-indian-army-updated-2026-gd-tradesman-maths-reasoning-original-imahhyfrcb3d4qeb.jpeg?q=70">
+            <h3>Agniveer Indian Army Updated 2026 (GD & Tradesman) Maths</h3>
+            <p>₹149</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+       <div class="card" onclick="viewProduct('Indian Polity – Comprehensive Theory Book for UPSC & State PSC ', '₹614')">
+            <img src="https://rukminim1.flixcart.com/image/1540/1540/xif0q/book/o/f/a/indian-polity-comprehensive-theory-book-for-upsc-state-psc-exams-original-imahbvggynqjhst7.jpeg?q=90">
+            <h3>Indian Polity – Comprehensive Theory Book for UPSC & State PSC</h3>
+            <p>₹614</p>
+            <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+        <div class="card" onclick="viewProduct('SHINI LIFESTYLE Bharat Ka Samvidhan Book in Hindi | Indian Constitution Explained (Book, Dr. B. R. Ambedkar)', '₹239')">
+            <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/book/h/t/o/bharat-ka-samvidhan-book-in-hindi-indian-constitution-explained-original-imahe5zftugj7ryb.jpeg?q=70">
+            <h3>SHINI LIFESTYLE Bharat Ka Samvidhan Book in Hindi | Indian Constitution Explained (Book, Dr. B. R. Ambedkar)</h3>
+            <p>₹239</p>
+           <button onclick="event.stopPropagation(); addToCart()">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h2>RoyalMart</h2>
+            <p>Experience premium shopping with RoyalMart.</p>
+            <p>Shop smarter, live better with RoyalMart.</p>
+
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <p class="copyright">© 2026 RoyalMart. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
